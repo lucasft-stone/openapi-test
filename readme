@@ -1,6 +1,6 @@
 # 📚 OpenAPI Test - Documentação da API
 
-Este repositório contém uma especificação completa de uma API REST documentada utilizando OpenAPI 3.0.3. A documentação é modular, organizada claramente por domínio e método, facilitando manutenção, escalabilidade e colaboração.
+Este repositório contém uma especificação completa e modular de uma API REST documentada utilizando OpenAPI 3.0.3. A documentação está organizada claramente por domínio e métodos, facilitando manutenção, escalabilidade e colaboração.
 
 ## 🚀 Estrutura do Projeto
 
@@ -10,14 +10,28 @@ A documentação está organizada da seguinte forma:
 openapi-test/
 ├── openapi.json (arquivo raiz da especificação)
 ├── users/
+│   ├── path.json
 │   ├── get-users/
+│   │   ├── schema.json
+│   │   ├── responses.json
+│   │   └── examples/
 │   └── post-users/
+│       ├── schema.json
+│       ├── responses.json
+│       └── examples/
 └── orders/
+    ├── path.json
     ├── get-orders/
+    │   ├── schema.json
+    │   ├── responses.json
+    │   └── examples/
     └── post-orders/
+        ├── schema.json
+        ├── responses.json
+        └── examples/
 ```
 
-Cada endpoint (`get-users`, `post-users`, `get-orders`, `post-orders`) inclui seus próprios arquivos `schema.json`, `responses.json`, `path.json` e uma pasta com exemplos detalhados (`examples`).
+Cada rota possui exemplos práticos para facilitar testes e entendimento.
 
 ---
 
@@ -38,8 +52,6 @@ A documentação completa pode ser facilmente visualizada utilizando o **Swagger
 ### Pedidos (`orders`)
 - **GET** `/orders`: Lista os pedidos existentes.
 - **POST** `/orders`: Cria um novo pedido.
-
-Cada rota possui exemplos práticos para facilitar testes e entendimento.
 
 ---
 
