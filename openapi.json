@@ -6,10 +6,10 @@
   },
   "paths": {
     "/users": {
-      "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/users/path.json"
+      "$ref": "./users/path.json"
     },
     "/orders": {
-      "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/orders/path.json"
+      "$ref": "./orders/path.json"
     }
   }
 }
