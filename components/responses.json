@@ -1,0 +1,29 @@
+{
+    "UserList": {
+      "description": "Lista de usuários obtida com sucesso",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "array",
+            "items": {
+              "$ref": "./schemas.json#/User"
+            }
+          }
+        }
+      }
+    },
+    "OrderList": {
+      "description": "Lista de pedidos obtida com sucesso",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "array",
+            "items": {
+              "$ref": "./schemas.json#/Order"
+            }
+          }
+        }
+      }
+    }
+  }
+  

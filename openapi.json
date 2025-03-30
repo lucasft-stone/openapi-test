@@ -1,0 +1,24 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+      "title": "API de Exemplo",
+      "version": "1.0.0"
+    },
+    "paths": {
+      "/users": {
+        "$ref": "paths/users.json"
+      },
+      "/orders": {
+        "$ref": "paths/orders.json"
+      }
+    },
+    "components": {
+      "schemas": {
+        "$ref": "components/schemas.json"
+      },
+      "responses": {
+        "$ref": "components/responses.json"
+      }
+    }
+  }
+  

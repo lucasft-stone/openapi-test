@@ -1,0 +1,28 @@
+{
+    "get": {
+      "summary": "Obter lista de pedidos",
+      "responses": {
+        "200": {
+          "$ref": "../components/responses.json#/OrderList"
+        }
+      }
+    },
+    "post": {
+      "summary": "Criar um novo pedido",
+      "requestBody": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../components/schemas.json#/Order"
+            }
+          }
+        }
+      },
+      "responses": {
+        "201": {
+          "description": "Pedido criado com sucesso"
+        }
+      }
+    }
+  }
+  
