@@ -6,20 +6,10 @@
   },
   "paths": {
     "/users": {
-      "get": {
-        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/users/get-users/path.json#get"
-      },
-      "post": {
-        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/users/post-users/path.json#post"
-      }
+      "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/users/path.json"
     },
     "/orders": {
-      "get": {
-        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/orders/get-orders/path.json#get"
-      },
-      "post": {
-        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/orders/post-orders/path.json#post"
-      }
+      "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/orders/path.json"
     }
   }
 }

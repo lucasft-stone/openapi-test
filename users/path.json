@@ -1,0 +1,38 @@
+{
+    "get": {
+        "summary": "Listar usuários",
+        "responses": {
+            "200": {
+                "$ref": "./get-users/responses.json#/UserList"
+            }
+        }
+    },
+    "post": {
+        "summary": "Criar usuário",
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "./post-users/schema.json#/UserCreate"
+                    },
+                    "examples": {
+                        "joao": {
+                            "$ref": "./post-users/examples/criar-usuario-joao.json"
+                        },
+                        "maria": {
+                            "$ref": "./post-users/examples/criar-usuario-maria.json"
+                        },
+                        "pedro": {
+                            "$ref": "./post-users/examples/criar-usuario-pedro.json"
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "201": {
+                "$ref": "./post-users/responses.json#/UserCreated"
+            }
+        }
+    }
+}

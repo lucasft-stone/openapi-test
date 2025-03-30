@@ -1,0 +1,38 @@
+{
+    "get": {
+        "summary": "Listar pedidos",
+        "responses": {
+            "200": {
+                "$ref": "./get-orders/responses.json#/OrderList"
+            }
+        }
+    },
+    "post": {
+        "summary": "Criar pedido",
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "./post-orders/schema.json#/OrderCreate"
+                    },
+                    "examples": {
+                        "pedidoPendente": {
+                            "$ref": "./post-orders/examples/criar-order-pendente.json"
+                        },
+                        "pedidoAprovado": {
+                            "$ref": "./post-orders/examples/criar-order-aprovada.json"
+                        },
+                        "pedidoCancelado": {
+                            "$ref": "./post-orders/examples/criar-order-cancelada.json"
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "201": {
+                "$ref": "./post-orders/responses.json#/OrderCreated"
+            }
+        }
+    }
+}

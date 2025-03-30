@@ -1,0 +1,60 @@
+# 📚 OpenAPI Test - Documentação da API
+
+Este repositório contém uma especificação completa de uma API REST documentada utilizando OpenAPI 3.0.3. A documentação é modular, organizada claramente por domínio e método, facilitando manutenção, escalabilidade e colaboração.
+
+## 🚀 Estrutura do Projeto
+
+A documentação está organizada da seguinte forma:
+
+```
+openapi-test/
+├── openapi.json (arquivo raiz da especificação)
+├── users/
+│   ├── get-users/
+│   └── post-users/
+└── orders/
+    ├── get-orders/
+    └── post-orders/
+```
+
+Cada endpoint (`get-users`, `post-users`, `get-orders`, `post-orders`) inclui seus próprios arquivos `schema.json`, `responses.json`, `path.json` e uma pasta com exemplos detalhados (`examples`).
+
+---
+
+## 🔗 Como acessar a documentação?
+
+A documentação completa pode ser facilmente visualizada utilizando o **Swagger UI Online**. Acesse diretamente pelo seguinte link:
+
+➡️ [Visualizar Documentação OpenAPI (Swagger UI)](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/openapi.json)
+
+---
+
+## 📂 Detalhes dos Domínios
+
+### Usuários (`users`)
+- **GET** `/users`: Lista os usuários cadastrados.
+- **POST** `/users`: Cria um novo usuário.
+
+### Pedidos (`orders`)
+- **GET** `/orders`: Lista os pedidos existentes.
+- **POST** `/orders`: Cria um novo pedido.
+
+Cada rota possui exemplos práticos para facilitar testes e entendimento.
+
+---
+
+## 🛠️ Ferramentas Utilizadas
+
+- [OpenAPI Specification (Swagger)](https://swagger.io/docs/specification/about/)
+- [Swagger UI Online](https://swagger.io/tools/swagger-ui/)
+
+---
+
+## 📌 Contribuições
+
+Sinta-se à vontade para abrir issues ou pull requests para contribuir com melhorias ou correções.
+
+---
+
+©️ Desenvolvido por Lucas.
+
