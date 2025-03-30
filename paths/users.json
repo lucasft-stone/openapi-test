@@ -3,7 +3,7 @@
       "summary": "Obter lista de usuários",
       "responses": {
         "200": {
-          "$ref": "../components/responses.json#/UserList"
+          "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/refs/heads/main/components/responses.json#/UserList"
         }
       }
     },
@@ -13,7 +13,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../components/schemas.json#/User"
+              "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/refs/heads/main/components/schemas.json#/User"
             }
           }
         }

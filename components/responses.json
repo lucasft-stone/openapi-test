@@ -6,7 +6,7 @@
           "schema": {
             "type": "array",
             "items": {
-              "$ref": "./schemas.json#/User"
+              "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/refs/heads/main/components/schemas.json#/User"
             }
           }
         }
@@ -19,7 +19,7 @@
           "schema": {
             "type": "array",
             "items": {
-              "$ref": "./schemas.json#/Order"
+              "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/refs/heads/main/components/schemas.json#/Order"
             }
           }
         }

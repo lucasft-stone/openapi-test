@@ -6,18 +6,18 @@
     },
     "paths": {
       "/users": {
-        "$ref": "paths/users.json"
+        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/refs/heads/main/paths/users.json"
       },
       "/orders": {
-        "$ref": "paths/orders.json"
+        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/refs/heads/main/paths/orders.json"
       }
     },
     "components": {
       "schemas": {
-        "$ref": "components/schemas.json"
+        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/refs/heads/main/components/schemas.json"
       },
       "responses": {
-        "$ref": "components/responses.json"
+        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/refs/heads/main/components/responses.json"
       }
     }
   }
