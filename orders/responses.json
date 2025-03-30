@@ -1,0 +1,14 @@
+{
+    "OrderList": {
+      "description": "Lista pedidos",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "array",
+            "items": { "$ref": "./schemas.json#/Order" }
+          }
+        }
+      }
+    }
+  }
+  

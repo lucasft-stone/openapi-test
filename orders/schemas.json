@@ -1,0 +1,12 @@
+{
+    "Order": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "integer" },
+        "total": { "type": "number" },
+        "status": { "type": "string" }
+      },
+      "required": ["total", "status"]
+    }
+  }
+  

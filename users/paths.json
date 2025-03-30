@@ -1,0 +1,30 @@
+{
+    "users": {
+      "get": {
+        "summary": "Listar usuários",
+        "responses": {
+          "200": {
+            "$ref": "./responses.json#/UserList"
+          }
+        }
+      },
+      "post": {
+        "summary": "Criar usuário",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./schemas.json#/User"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Usuário criado com sucesso"
+          }
+        }
+      }
+    }
+  }
+  

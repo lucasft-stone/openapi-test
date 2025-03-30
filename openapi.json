@@ -1,23 +1,33 @@
 {
     "openapi": "3.0.3",
     "info": {
-      "title": "API de Exemplo",
+      "title": "API Exemplo por Domínios",
       "version": "1.0.0"
     },
     "paths": {
       "/users": {
-        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/refs/heads/main/paths/users.json"
+        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/users/paths.json#/users"
       },
       "/orders": {
-        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/refs/heads/main/paths/orders.json"
+        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/orders/paths.json#/orders"
       }
     },
     "components": {
       "schemas": {
-        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/refs/heads/main/components/schemas.json"
+        "User": {
+          "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/users/schemas.json#/User"
+        },
+        "Order": {
+          "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/orders/schemas.json#/Order"
+        }
       },
       "responses": {
-        "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/refs/heads/main/components/responses.json"
+        "UserList": {
+          "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/users/responses.json#/UserList"
+        },
+        "OrderList": {
+          "$ref": "https://raw.githubusercontent.com/lucasft-stone/openapi-test/main/orders/responses.json#/OrderList"
+        }
       }
     }
   }
