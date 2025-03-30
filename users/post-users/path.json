@@ -1,0 +1,20 @@
+{
+  "post": {
+    "summary": "Criar usuário",
+    "requestBody": {
+      "content": {
+        "application/json": {
+          "schema": { "$ref": "./schema.json#/UserCreate" },
+          "examples": {
+            "joao": { "$ref": "./examples/criar-usuario-joao.json" },
+            "maria": { "$ref": "./examples/criar-usuario-maria.json" },
+            "pedro": { "$ref": "./examples/criar-usuario-pedro.json" }
+          }
+        }
+      }
+    },
+    "responses": {
+      "201": { "$ref": "./responses.json#/UserCreated" }
+    }
+  }
+}

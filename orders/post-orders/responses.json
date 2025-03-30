@@ -1,0 +1,10 @@
+{
+  "OrderCreated": {
+    "description": "Pedido criado com sucesso",
+    "content": {
+      "application/json": {
+        "schema": { "$ref": "./schema.json#/OrderCreate" }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "post": {
+    "summary": "Criar pedido",
+    "requestBody": {
+      "content": {
+        "application/json": {
+          "schema": { "$ref": "./schema.json#/OrderCreate" },
+          "examples": {
+            "pedidoPendente": { "$ref": "./examples/criar-order-pendente.json" },
+            "pedidoAprovado": { "$ref": "./examples/criar-order-aprovada.json" },
+            "pedidoCancelado": { "$ref": "./examples/criar-order-cancelada.json" }
+          }
+        }
+      }
+    },
+    "responses": {
+      "201": { "$ref": "./responses.json#/OrderCreated" }
+    }
+  }
+}

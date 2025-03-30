@@ -1,0 +1,18 @@
+{
+  "OrderList": {
+    "description": "Lista pedidos",
+    "content": {
+      "application/json": {
+        "schema": { 
+          "type": "array",
+          "items": { "$ref": "./schema.json#/Order" } 
+        },
+        "examples": {
+          "pedidoPendente": { "$ref": "./examples/lista-orders-pendente.json" },
+          "pedidoAprovado": { "$ref": "./examples/lista-orders-aprovada.json" },
+          "pedidoCancelado": { "$ref": "./examples/lista-orders-cancelada.json" }
+        }
+      }
+    }
+  }
+}

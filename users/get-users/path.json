@@ -1,0 +1,8 @@
+{
+  "get": {
+    "summary": "Listar usuários",
+    "responses": {
+      "200": { "$ref": "./responses.json#/UserList" }
+    }
+  }
+}

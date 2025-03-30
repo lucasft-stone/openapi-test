@@ -1,0 +1,8 @@
+{
+  "get": {
+    "summary": "Listar pedidos",
+    "responses": {
+      "200": { "$ref": "./responses.json#/OrderList" }
+    }
+  }
+}

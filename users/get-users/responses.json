@@ -1,0 +1,18 @@
+{
+  "UserList": {
+    "description": "Lista usuários",
+    "content": {
+      "application/json": {
+        "schema": { 
+          "type": "array",
+          "items": { "$ref": "./schema.json#/User" } 
+        },
+        "examples": {
+          "lista1": { "$ref": "./examples/lista-usuarios-um.json" },
+          "lista2": { "$ref": "./examples/lista-usuarios-dois.json" },
+          "lista3": { "$ref": "./examples/lista-usuarios-tres.json" }
+        }
+      }
+    }
+  }
+}

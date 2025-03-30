@@ -1,0 +1,10 @@
+{
+  "OrderCreate": {
+    "type": "object",
+    "properties": {
+      "total": { "type": "number" },
+      "status": { "type": "string" }
+    },
+    "required": ["total", "status"]
+  }
+}
