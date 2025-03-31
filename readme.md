@@ -67,6 +67,3 @@ A documentação completa pode ser facilmente visualizada utilizando o **Swagger
 Sinta-se à vontade para abrir issues ou pull requests para contribuir com melhorias ou correções.
 
 ---
-
-©️ Desenvolvido por Lucas.
-
